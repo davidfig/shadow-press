@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>shadow-press API Documentation</title>
+    
+    <meta name="description" content="Documentation for shadow-press library" />
+    
+        <meta name="keywords" content="docs, documentation, html5, javascript, jsdoc, shadow, button, press" />
+        <meta name="keyword" content="docs, documentation, html5, javascript, jsdoc, shadow, button, press" />
+    
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+    <script>
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"shadow-press","footer":"by YOPEY YOPEY LLC (yopeyopey.com)","copyright":"Copyright © 2018 YOPEY YOPEY LLC.","meta":{"title":"shadow-press API Documentation","description":"Documentation for shadow-press library","keyword":"docs, documentation, html5, javascript, jsdoc, shadow, button, press"}};
+    </script>
+    
+
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html">shadow-press</a></h3>
+    <button id="menuToggle" class="btn btn-link btn-lg menu-toggle">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </button>
+    <div class="search">
+        <input id="search" type="text" class="form-control input-md" placeholder="Search...">
+    </div>
+    <ul class="list">
+    
+        
+        <li class="item" data-name="ShadowPress">
+            <span class="title  ">
+                
+                <a href="ShadowPress.html">ShadowPress</a>
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li class="parent  " data-name="ShadowPress#clear"><a href="ShadowPress.html#clear">clear</a></li>
+            
+                <li class="parent  " data-name="ShadowPress#emit"><a href="ShadowPress.html#emit">emit</a></li>
+            
+                <li class="parent  " data-name="ShadowPress#move"><a href="ShadowPress.html#move">move</a></li>
+            
+                <li class="parent  " data-name="ShadowPress#off"><a href="ShadowPress.html#off">off</a></li>
+            
+                <li class="parent  " data-name="ShadowPress#on"><a href="ShadowPress.html#on">on</a></li>
+            
+                <li class="parent  " data-name="ShadowPress#press"><a href="ShadowPress.html#press">press</a></li>
+            
+                <li class="parent  " data-name="ShadowPress#up"><a href="ShadowPress.html#up">up</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            <span class="subtitle">Events</span>
+            
+                <li class="parent" data-name="ShadowPress#event:cancel"><a href="ShadowPress.html#event:cancel">cancel</a></li>
+            
+                <li class="parent" data-name="ShadowPress#event:down"><a href="ShadowPress.html#event:down">down</a></li>
+            
+                <li class="parent" data-name="ShadowPress#event:move"><a href="ShadowPress.html#event:move">move</a></li>
+            
+                <li class="parent" data-name="ShadowPress#event:pressed"><a href="ShadowPress.html#event:pressed">pressed</a></li>
+            
+            </ul>
+        </li>
+    
+    </ul>
+</div>
+    <div class="main">
+        
+        <h1 class="page-title" data-filename="ShadowPress">Index</h1>
+        
+        
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article class="readme content-size"><p><strong>Note: as much as I'd love to finish and release this library, I ran into a problem with margin collapse that made this not work in many cases. See the demo below to see what I mean. I'm still using this library in my internal projects, and maybe if I figure out this issue, I'll release it on npm. But for now, pull it from github if you need it.</strong></p>
+<h1>shadow-press</h1><p>Vanilla javascript to turn an HTMLElement into a shadow pressed element</p>
+<h2>Rationale</h2><p>I wanted to quickly create a highly configurable shadow press experience. Shadow press is when an HTMLELement has a box-shadow or text-shadow when unpressed, and then when pressed the shadow is hidden and the HTMLElement is pushed in the direction of the shadow.</p>
+<h2>Live Example</h2><p><a href="davidfig.github.io/shadow-press">https://davidfig.github.io/shadow-press/</a></p>
+<h2>Installation</h2><p><strong>See note above. For now, please clone locally and use.</strong>
+    npm i shadow-press</p>
+<h2>Simple Example</h2><pre class="prettyprint source lang-js"><code>var ShadowPress = require('shadowpress');
+
+new ShadowPress(document.getElementById('test'), {
+    moveType: 'margin',
+    moveAmount: '0.5em',
+    shadowValue: '0.5em 0.5em 0.5em rgba(0,0,0,0.3)',
+    moveThreshold: 10
+});</code></pre><h2>License</h2><p>MIT License<br>(c) 2018 <a target="_blank" href="https://yopeyopey.com/">YOPEY YOPEY LLC</a> by <a target="_blank" href="https://twitter.com/yopey_yopey/">David Figatner</a></p></article>
+    </section>
+
+
+
+
+
+
+        
+
+        <footer class="content-size">
+            <div class="footer">
+                Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sat Aug 18 2018 22:59:20 GMT+0800 (DST)
+            </div>
+        </footer>
+    </div>
+</div>
+<script>prettyPrint();</script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

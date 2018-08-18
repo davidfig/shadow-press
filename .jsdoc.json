@@ -1,5 +1,5 @@
 {
-    "applicationName": "shadowpress",
+    "applicationName": "shadow-press",
     "disqus": "",
     "openGraph": {
         "title": "",
@@ -9,15 +9,14 @@
         "url": ""
     },
     "meta": {
-        "title": "DomEase",
+        "title": "Shadow Press",
         "description": "",
         "keyword": ""
     },
     "linenums": true,
     "source": {
         "include": [
-            "./src",
-            "./node_modules/eventemitter3"
+            "./index.js"
         ],
         "includePattern": ".+\\.js(doc)?$",
         "excludePattern": "(^|\\/|\\\\)_"
@@ -40,12 +39,12 @@
         "default": {
             "outputSourceFiles": true
         },
-        "applicationName": "shadowpress",
+        "applicationName": "shadow-press",
         "footer"        : "by YOPEY YOPEY LLC (yopeyopey.com)",
         "copyright"     : "Copyright © 2018 YOPEY YOPEY LLC.",
         "meta": {
-            "title": "shadowpress API Documentation",
-            "description": "Documentation for shadowpress library",
+            "title": "shadow-press API Documentation",
+            "description": "Documentation for shadow-press library",
             "keyword": "docs, documentation, html5, javascript, jsdoc, shadow, button, press"
         }
     }

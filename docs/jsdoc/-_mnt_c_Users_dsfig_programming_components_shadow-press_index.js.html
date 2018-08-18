@@ -1,4 +1,116 @@
-/* Copyright (c) 2018 YOPEY YOPEY LLC */
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>shadow-press API Documentation</title>
+    
+    <meta name="description" content="Documentation for shadow-press library" />
+    
+        <meta name="keywords" content="docs, documentation, html5, javascript, jsdoc, shadow, button, press" />
+        <meta name="keyword" content="docs, documentation, html5, javascript, jsdoc, shadow, button, press" />
+    
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+    <script>
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true},"applicationName":"shadow-press","footer":"by YOPEY YOPEY LLC (yopeyopey.com)","copyright":"Copyright © 2018 YOPEY YOPEY LLC.","meta":{"title":"shadow-press API Documentation","description":"Documentation for shadow-press library","keyword":"docs, documentation, html5, javascript, jsdoc, shadow, button, press"}};
+    </script>
+    
+
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html">shadow-press</a></h3>
+    <button id="menuToggle" class="btn btn-link btn-lg menu-toggle">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </button>
+    <div class="search">
+        <input id="search" type="text" class="form-control input-md" placeholder="Search...">
+    </div>
+    <ul class="list">
+    
+        
+        <li class="item" data-name="ShadowPress">
+            <span class="title  ">
+                
+                <a href="ShadowPress.html">ShadowPress</a>
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li class="parent  " data-name="ShadowPress#clear"><a href="ShadowPress.html#clear">clear</a></li>
+            
+                <li class="parent  " data-name="ShadowPress#emit"><a href="ShadowPress.html#emit">emit</a></li>
+            
+                <li class="parent  " data-name="ShadowPress#move"><a href="ShadowPress.html#move">move</a></li>
+            
+                <li class="parent  " data-name="ShadowPress#off"><a href="ShadowPress.html#off">off</a></li>
+            
+                <li class="parent  " data-name="ShadowPress#on"><a href="ShadowPress.html#on">on</a></li>
+            
+                <li class="parent  " data-name="ShadowPress#press"><a href="ShadowPress.html#press">press</a></li>
+            
+                <li class="parent  " data-name="ShadowPress#up"><a href="ShadowPress.html#up">up</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            <span class="subtitle">Events</span>
+            
+                <li class="parent" data-name="ShadowPress#event:cancel"><a href="ShadowPress.html#event:cancel">cancel</a></li>
+            
+                <li class="parent" data-name="ShadowPress#event:down"><a href="ShadowPress.html#event:down">down</a></li>
+            
+                <li class="parent" data-name="ShadowPress#event:move"><a href="ShadowPress.html#event:move">move</a></li>
+            
+                <li class="parent" data-name="ShadowPress#event:pressed"><a href="ShadowPress.html#event:pressed">pressed</a></li>
+            
+            </ul>
+        </li>
+    
+    </ul>
+</div>
+    <div class="main">
+        
+        <h1 class="page-title" data-filename="ShadowPress">Source: /mnt/c/Users/dsfig/programming/components/shadow-press/index.js</h1>
+        
+        
+
+
+    
+    <section>
+        <header>
+            <div class="header content-size">
+                <h2>/mnt/c/Users/dsfig/programming/components/shadow-press/index.js</h2>
+            </div>
+        </header>
+        <article>
+            <pre id="source-code" class="prettyprint source "><code>/* Copyright (c) 2018 YOPEY YOPEY LLC */
 
 const Mitt = require('mitt')
 
@@ -74,7 +186,7 @@ class ShadowPress
     {
         if (this.shadowX)
         {
-            if (this.shadowX < 0)
+            if (this.shadowX &lt; 0)
             {
                 this.onHorizontal = this.moveType + 'Left'
                 this.offHorizontal = this.moveType + 'Right'
@@ -87,7 +199,7 @@ class ShadowPress
         }
         if (this.shadowY)
         {
-            if (this.shadowY < 0)
+            if (this.shadowY &lt; 0)
             {
                 this.onVertical = this.moveType + 'Top'
                 this.offVertical = this.moveType + 'Bottom'
@@ -285,4 +397,25 @@ class ShadowPress
  * @property {(MouseEvent|TouchEvent)} event
  */
 
-module.exports = ShadowPress
+module.exports = ShadowPress</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+
+        
+
+        <footer class="content-size">
+            <div class="footer">
+                Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sat Aug 18 2018 22:59:20 GMT+0800 (DST)
+            </div>
+        </footer>
+    </div>
+</div>
+<script>prettyPrint();</script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
