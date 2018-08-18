@@ -1,3 +1,5 @@
+**Note: as much as I'd love to finish and release this library, I ran into a problem with margin collapse that made this not work in many cases. See the demo below to see what I mean. I'm still using this library in my internal projects, and maybe if I figure out this issue, I'll release it on npm. But for now, pull it from github if you need it.**
+
 # shadow-press
 Vanilla javascript to turn an HTMLElement into a shadow pressed element
 
@@ -10,7 +12,8 @@ I wanted to quickly create a highly configurable shadow press experience. Shadow
 
 ## Installation
 
-    npm i shadowpress
+**See note above. For now, please clone locally and use.**
+    npm i shadow-press
 
 ## Simple Example
 
