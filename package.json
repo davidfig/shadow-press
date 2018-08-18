@@ -1,0 +1,22 @@
+{
+  "name": "shadow-press",
+  "version": "1.0.0",
+  "description": "Vanilla javascript to turn an HTMLElement into a shadow press element",
+  "main": "index.js",
+  "scripts": {
+    "test": "budo --dir docs docs/code.js:index.js --live",
+    "build": "browserify docs/code.js -o docs/index.js",
+    "docs": "jsdoc README.md index.js",
+    "prepublishOnly": "npm run build && npm run docs"
+  },
+  "author": "David Figatner",
+  "license": "MIT",
+  "devDependencies": {
+    "fork-me-github": "^1.2.0",
+    "highlight.js": "^9.12.0",
+    "yy-jsdoc-template": "^1.3.0"
+  },
+  "dependencies": {
+    "mitt": "^1.1.3"
+  }
+}
