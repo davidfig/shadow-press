@@ -10,6 +10,10 @@ I wanted to quickly create a highly configurable shadow press experience. Shadow
 ## Live Example
 <a href="https://davidfig.github.io/shadow-press/">davidfig.github.io/shadow-press</a>
 
+## API
+
+<a href="https://davidfig.github.io/shadow-press/jsdoc">Generated JS Doc</a>
+
 ## Installation
 
 **See note above. For now, please clone locally and use.**
