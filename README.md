@@ -8,7 +8,7 @@ Vanilla javascript to turn an HTMLElement into a shadow pressed element
 I wanted to quickly create a highly configurable shadow press experience. Shadow press is when an HTMLELement has a box-shadow or text-shadow when unpressed, and then when pressed the shadow is hidden and the HTMLElement is pushed in the direction of the shadow.
 
 ## Live Example
-[https://davidfig.github.io/shadow-press/](davidfig.github.io/shadow-press)
+<a href="https://davidfig.github.io/shadow-press/">davidfig.github.io/shadow-press</a>
 
 ## Installation
 
